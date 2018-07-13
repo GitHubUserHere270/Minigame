@@ -15,7 +15,7 @@ public class btnControl : MonoBehaviour {
 
     void rightbutton()
     {
-        bar.transform.Rotate(0, 0, 1f);
+        bar.transform.Rotate(0, 0, -1f);
     }
 
 }
