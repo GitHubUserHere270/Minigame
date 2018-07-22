@@ -4,18 +4,40 @@ using UnityEngine;
 
 public class btnControl : MonoBehaviour {
 
-
-
     public GameObject bar;
+
+    public bool buttonPressed;
+
+    int k = 1;
 
     void leftbutton()
     {
-        bar.transform.Rotate(0, 0, 1f);
+          k = 1;
+
+          buttonPressed = true;
+
+        if (buttonPressed)
+        {
+            bar.transform.Rotate(0, 0, 0.01f * k);
+        }
     }
 
     void rightbutton()
     {
-        bar.transform.Rotate(0, 0, -1f);
+          k = -1;
+
+          buttonPressed = true;
+
+        if (buttonPressed)
+        {
+            bar.transform.Rotate(0, 0, 0.01f * k);
+        }
     }
+
+   
+
+
+
+
 
 }
